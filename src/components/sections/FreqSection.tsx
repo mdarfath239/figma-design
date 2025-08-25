@@ -22,34 +22,34 @@ const Card: FC<CardProps> = ({ title }) => {
 const FreqSection: FC = () => {
   return (
     <section
-      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center px-6 py-20"
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center px-4 sm:px-6 md:px-10 py-10 md:py-20"
       style={{ backgroundImage: "url('/images/bg-freq.png')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content grid */}
-      <div className="relative z-10 max-w-7xl w-full grid md:grid-cols-2 gap-10">
+      <div className="relative z-10 max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
         {/* Left box */}
-        <div className="rounded-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md shadow-xl p-10 md:p-12 flex flex-col justify-between min-h-[420px]">
+        <div className="rounded-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md shadow-xl p-6 md:p-10 flex flex-col justify-between min-h-[320px] md:min-h-[420px]">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 leading-snug">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-8 leading-snug">
               Have Questions? <br /> Let’s Talk!
             </h2>
-            <p className="text-white/70 text-base md:text-lg mb-5 leading-relaxed">
+            <p className="text-white/70 text-base md:text-lg mb-3 md:mb-5 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <p className="text-white/70 text-base md:text-lg mb-10 leading-relaxed">
+            <p className="text-white/70 text-base md:text-lg mb-6 md:mb-10 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur.
             </p>
           </div>
-          <button className="bg-white text-black px-6 py-3 rounded-md font-medium shadow hover:bg-gray-100 transition w-fit">
+          <button className="bg-white text-black px-4 md:px-6 py-2 md:py-3 rounded-md font-medium shadow hover:bg-gray-100 transition w-fit text-sm md:text-base">
             Get Started
           </button>
         </div>
 
         {/* Right block (stacked cards) */}
-        <div className="flex flex-col gap-8 justify-between min-h-[420px]">
+        <div className="flex flex-col gap-6 md:gap-8 justify-between min-h-[320px] md:min-h-[420px]">
           <Card title="Partnerships" />
           <Card title="Careers" />
         </div>

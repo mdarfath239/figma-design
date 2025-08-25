@@ -5,55 +5,27 @@ import Image from "next/image";
 
 const SustainabilitySection = () => {
   return (
-    <section className="relative mt-[-10px] bg-black text-white py-20 px-6 md:px-16 lg:px-28">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
-        {/* Left Column - Text */}
-        <div>
-          <h2 className="text-2xl font-['Satoshi'] md:text-3xl font-semibold mb-6">
-            Sustainability at the heart <br /> of Innovation
-          </h2>
-          <p className="max-w-[515px] font-['Satoshi'] text-base text-[#F8F9FA99] leading-relaxed mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <button className="px-5 py-2 bg-white text-black rounded-md font-['Satoshi'] text-sm font-medium hover:bg-gray-200 transition">
-            Get into Details
-          </button>
-        </div>
-
-        {/* Right Column - Image with Glass Panel Effects */}
-        <div className="relative  h-[300px] mr-[180px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-xl">
-          
-          {/* --- Background Image with Gradient Mask --- */}
-          <Image
-            src="/images/visual.png"
-            alt="Sustainability Visual"
-            fill
-            className="object-cover w-full"
-            style={{
-              WebkitMaskImage:
-                "linear-gradient(to right, transparent 0%, white 25%, white 85%, transparent 100%,to left ,transparent 0%, white 25%, white 85%, transparent 100%)",
-              WebkitMaskRepeat: "no-repeat",
-              WebkitMaskSize: "100% 100%",
-              maskImage:
-                "linear-gradient(to right, transparent 0%, white 15%, white 85%, transparent 50%)",
-              maskRepeat: "no-repeat",
-              maskSize: "100% 100%",
-              
-            }}
-            priority
-          />
-
-          {/* --- Glass Panels Overlay --- */}
-          <div className="absolute inset-y-0 left-0 flex  px-2">
-          <div className="w-8 md:w-10 lg:w-12 bg-white/10 backdrop-blur-[30px]   rounded-md"></div>
-            <div className="w-8 md:w-10 lg:w-12 bg-white/10 backdrop-blur-[30px]   rounded-md"></div>
-            <div className="w-8 md:w-10 lg:w-12 bg-white/10 backdrop-blur-[30px]   rounded-md"></div>
-            <div className="w-8 md:w-10 lg:w-12 bg-white/10 backdrop-blur-[25px]   rounded-md"></div>
-            <div className="w-8 md:w-10 lg:w-12 bg-white/10 backdrop-blur-[35px]   rounded-md"></div>
+    <section className="relative bg-black text-white py-10 md:py-24 px-4 sm:px-8 md:px-20 lg:px-28 overflow-hidden">
+      <div className="relative max-w-xl md:max-w-6xl mx-auto">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-8 md:mb-20 leading-snug">
+          Sustainability & Social Impact
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+          <div className="flex flex-col gap-4 md:gap-8">
+            <h3 className="text-base md:text-xl font-bold font-['Satoshi'] mb-2 md:mb-3">
+              Eco-friendly Materials
+            </h3>
+            <p className="text-gray-400 font-['Satoshi'] text-sm md:text-base leading-relaxed mb-4 md:mb-6">
+              We prioritize sustainable sourcing and production methods to minimize environmental impact and promote long-term ecological balance.
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 md:gap-8">
+            <h3 className="text-base md:text-xl font-bold font-['Satoshi'] mb-2 md:mb-3">
+              Community Engagement
+            </h3>
+            <p className="text-gray-400 font-['Satoshi'] text-sm md:text-base leading-relaxed mb-4 md:mb-6">
+              Our initiatives support local communities through education, employment, and outreach programs, fostering positive social change.
+            </p>
           </div>
         </div>
       </div>
